@@ -1,3 +1,64 @@
-body{
-    font-family: 'Open Sans', sans-serif;
+/* =================== Global Css Start ==================== */
+body {
+	font-family: "Open Sans", sans-serif;
+	color: #dbe2fb;
+	line-height: 28px;
 }
+::selection {
+	background: #b3d4fc;
+	text-shadow: none;
+}
+.section-padding{
+    padding: 90px 0;
+}
+.header-section{
+    background: transparent !important;
+}
+.navbar-transparent {
+    background-color: transparent !important;
+    backdrop-filter: blur(5px); 
+    -webkit-backdrop-filter: blur(5px); 
+}
+
+.navbar .offcanvas-body {
+    padding-top: 56px; 
+}
+
+/* =================== Global Css End ==================== */
+
+/* =================== Banner Section Css Start ==================== */
+.banner-section {
+	width: 100%;
+	background: linear-gradient(rgba(0, 18, 50, 0.7), rgba(0, 18, 50, 0.7)),
+		url(./assets/Images/banner.jpg);
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+.banner-section .hero {
+	width: 100%;
+	min-height: 90vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+    padding: 0 20px;
+}
+.banner-section .hero h1 {
+	font-size: 80px;
+	line-height: 1.1;
+	text-transform: uppercase;
+	margin-bottom: 18px;
+	font-weight: 800;
+	text-align: center;
+	color: #fff;
+}
+.banner-section .hero h1 span {
+	color: #31d7a9;
+}
+.banner-section .hero h2 {
+	font-size: 28px;
+	line-height: 1.4;
+	text-align: center;
+}
+/* =================== Banner Section Css End ==================== */
