@@ -1,11 +1,35 @@
 import { Button, Container, Modal } from "react-bootstrap";
 import PropTypes from "prop-types";
 import { useState } from "react";
-import Form from 'react-bootstrap/Form';
+import Form from "react-bootstrap/Form";
+import Swal from "sweetalert2";
 
 const TicketSection = ({ show }) => {
 	const [showModal, setShowModal] = useState(false);
-	const handleClose = () => setShowModal(false);
+	const [userName, setUserName] = useState("");
+	const [email, setEmail] = useState("");
+	const [address, setAddress] = useState("");
+	const [feedback, setFeedback] = useState("");
+
+	const handleClose = () => {
+		const userInfo = {
+			userName,
+			email,
+			address,
+			feedback,
+			selectedMovie: show.name,
+			movieId: show.id,
+		};
+		let allInfo = JSON.parse(localStorage.getItem("usersInfo")) || [];
+		allInfo.push(userInfo);
+		localStorage.setItem("usersInfo", JSON.stringify(allInfo));
+		setShowModal(false);
+		Swal.fire({
+			title: "Good job!",
+			text: "Your Information is Saved",
+			icon: "success",
+		});
+	};
 	const handleShow = () => setShowModal(true);
 
 	return (
@@ -36,7 +60,7 @@ const TicketSection = ({ show }) => {
 					</Modal.Header>
 					<Modal.Body>
 						<div className="form-area">
-							<form action="">
+							<>
 								<Form>
 									<Form.Group
 										className="mb-3"
@@ -46,8 +70,8 @@ const TicketSection = ({ show }) => {
 										<Form.Control
 											type="text"
 											placeholder={show.name}
-                                            value={`${show.name} Movie`}
-                                            readOnly
+											value={`${show.name} Movie`}
+											readOnly
 										/>
 									</Form.Group>
 									<Form.Group
@@ -58,6 +82,9 @@ const TicketSection = ({ show }) => {
 										<Form.Control
 											type="text"
 											placeholder="Enter Your Name"
+											onChange={(e) =>
+												setUserName(e.target.value)
+											}
 										/>
 									</Form.Group>
 									<Form.Group
@@ -68,6 +95,9 @@ const TicketSection = ({ show }) => {
 										<Form.Control
 											type="email"
 											placeholder="Enter Your Email"
+											onChange={(e) =>
+												setEmail(e.target.value)
+											}
 										/>
 									</Form.Group>
 									<Form.Group
@@ -78,6 +108,9 @@ const TicketSection = ({ show }) => {
 										<Form.Control
 											type="text"
 											placeholder="Enter Your Address"
+											onChange={(e) =>
+												setAddress(e.target.value)
+											}
 										/>
 									</Form.Group>
 									<Form.Group
@@ -87,10 +120,16 @@ const TicketSection = ({ show }) => {
 										<Form.Label>
 											Give us a Feedback
 										</Form.Label>
-										<Form.Control as="textarea" rows={3} />
+										<Form.Control
+											as="textarea"
+											rows={3}
+											onChange={(e) =>
+												setFeedback(e.target.value)
+											}
+										/>
 									</Form.Group>
 								</Form>
-							</form>
+							</>
 						</div>
 					</Modal.Body>
 					<Modal.Footer>

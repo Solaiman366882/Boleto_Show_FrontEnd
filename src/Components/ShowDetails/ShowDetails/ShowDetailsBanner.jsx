@@ -2,6 +2,7 @@ import PropTypes from "prop-types";
 import { Container } from "react-bootstrap";
 import { FaCalendarAlt } from "react-icons/fa";
 import { IoStopwatchOutline } from "react-icons/io5";
+import defaultImg from "../../../assets/Images/banner03.jpg";
 import {
 	FaFacebookF,
 	FaGoogle,
@@ -14,7 +15,15 @@ const ShowDetailsBanner = ({ show }) => {
 	const { image, name, language, genres, premiered, runtime } = show || {};
 	return (
 		<div className="details-banner">
-			<img className="banner-img" src={image.original} alt={name} />
+			{image ? (
+				<img className="banner-img" src={image.original} alt={name} />
+			) : (
+				<img
+					className="banner-img"
+					src={defaultImg}
+					alt="default image"
+				></img>
+			)}
 			<div>
 				<Container>
 					<div className="details-area">
