@@ -1,10 +1,11 @@
 import { useLoaderData } from "react-router-dom";
+import ShowDetailsBanner from "../../Components/ShowDetails/ShowDetails/ShowDetailsBanner";
 
 const ShowDetails = () => {
     const show = useLoaderData() || {};
     return (
         <div>
-            this is show details of {show.name}
+            <ShowDetailsBanner show={show}></ShowDetailsBanner>
         </div>
     );
 };

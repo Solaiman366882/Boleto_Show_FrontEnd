@@ -226,84 +226,147 @@ a {
 
 /* =================== Newsletter Section Css Start ==================== */
 .footer-newsletter {
-    position: relative;
-    bottom: -150px;
-    z-index: 2;
-    margin-top: -160px;
+	position: relative;
+	bottom: -180px;
+	z-index: 2;
+	margin-top: -190px;
 }
-.newsletter-section{
-    border-radius: 20px;
-  overflow: hidden;
-  position: relative;
-  padding: 60px 20px;
-  text-align: center;
-  background:linear-gradient(0deg, #7300baa8 0%, #0f5ce0a2 100%),url(../src/assets/Images/newslater-bg.jpg);
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
+.newsletter-section {
+	border-radius: 20px;
+	overflow: hidden;
+	position: relative;
+	padding: 60px 20px;
+	text-align: center;
+	background: linear-gradient(0deg, #7300baa8 0%, #0f5ce0a2 100%),
+		url(../src/assets/Images/newslater-bg.jpg);
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
 }
-.newsletter-section input{
-    width: 100%;
-    height: 50px;
-  padding-right: 160px;
-  color: #99abe2;
-  border: 1px solid rgba(255, 255, 255, 0.4);
-  border-radius: 25px;
-  padding-left: 20px;
-  box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.1);
-  outline: none;
-  background: transparent;
+.newsletter-section input {
+	width: 100%;
+	height: 50px;
+	padding-right: 160px;
+	color: #99abe2;
+	border: 1px solid rgba(255, 255, 255, 0.4);
+	border-radius: 25px;
+	padding-left: 20px;
+	box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.1);
+	outline: none;
+	background: transparent;
 }
-.newsletter-section input::placeholder{
-    color: #99abe2; 
+.newsletter-section input::placeholder {
+	color: #99abe2;
 }
-.newsletter-section .form-area{
-    max-width: 600px;
-    margin: 0 auto;
-    position: relative;
-    margin-bottom: 25px;
+.newsletter-section .form-area {
+	max-width: 600px;
+	margin: 0 auto;
+	position: relative;
+	margin-bottom: 25px;
 }
-.newsletter-section .form-area .c-btn{
-    position: absolute;
-    top: 50%;
-    right: 0;
-    transform: translateY(-50%);
-    height: 100%;
+.newsletter-section .form-area .c-btn {
+	position: absolute;
+	top: 50%;
+	right: 0;
+	transform: translateY(-50%);
+	height: 100%;
 }
 
-.newsletter-section .newsletter-top h4{
-    color: #31d7a9;
-  margin-bottom: 12px;
-  font-size: 24px;
-  text-align: center;
-  text-transform: capitalize;
-  font-weight: 600;
+.newsletter-section .newsletter-top h4 {
+	color: #31d7a9;
+	margin-bottom: 12px;
+	font-size: 24px;
+	text-align: center;
+	text-transform: capitalize;
+	font-weight: 600;
 }
-.newsletter-section .newsletter-top h2{
-    line-height: 1.3;
-  color: #ffffff;
-  margin-bottom: 35px;
-  text-transform: uppercase;
-  font-weight: 700;
-  font-size: 36px;
-
+.newsletter-section .newsletter-top h2 {
+	line-height: 1.3;
+	color: #ffffff;
+	margin-bottom: 35px;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 36px;
 }
 /* =================== Newsletter Section Css End ==================== */
 
+/* =================== Details Banner Section Css Start ==================== */
+.details-banner {
+	width: 100%;
+	max-width: 100%;
+	position: relative;
+}
+.details-banner::after {
+	position: absolute;
+	content: "";
+	top: 0;
+	left: 0;
+	background: linear-gradient(
+		180deg,
+		rgba(0, 18, 50, 0.134891) 0%,
+		#001232 90%
+	);
+	width: 100%;
+	height: 100%;
+}
+.details-banner .details-area {
+	width: 100%;
+	position: relative;
+}
+.details-banner .details-hero {
+	position: absolute;
+	bottom: 20px;
+	z-index: 2;
+	padding: 20px;
+	width: 100%;
+}
+.details-banner .details-hero ul.d-icons li .details-icon {
+	color: #cfcfcf;
+	font-size: 16px;
+	cursor: pointer;
+}
+.details-banner .details-hero ul.d-genre li {
+	margin-bottom: 13px;
+	border: 1px solid rgba(163, 177, 198, 0.2);
+	font-size: 13px;
+	color: #9aace5;
+	text-transform: uppercase;
+	padding: 3px 17px;
+	border-radius: 18px;
+	-webkit-transition: all ease 0.3s;
+	transition: all ease 0.3s;
+	cursor: pointer;
+}
+.details-banner .details-hero ul.d-icons li .details-icon:hover{
+	color: #31d7a9;
+}
+.details-banner .details-hero ul.d-genre li:hover {
+	box-shadow: 0px 10px 15px 0px rgba(59, 55, 188, 0.5);
+}
+.details-banner .details-hero ul.d-genre li:hover {
+	box-shadow: 0px 10px 15px 0px rgba(59, 55, 188, 0.5);
+}
+.details-banner .banner-img {
+	width: 100%;
+	height: 500px;
+	object-fit: cover;
+	object-position: center top;
+}
 
+/* =================== Details Banner Section Css End ==================== */
 
 /* =================== Footer Section Css Start ==================== */
 .footer-section {
 	width: 100%;
 }
 .footer-section .footer-area {
-	padding-top: 230px;
+	padding-top: 250px;
 	position: relative;
-    z-index: 1;
+	z-index: 1;
 }
 .footer-section .footer-area::after {
-    content: "";
-    position: absolute;
+	content: "";
+	position: absolute;
 	left: 0;
 	top: 0px;
 	-webkit-mask-image: url(../src/assets/Images/footer-shape.png);
@@ -315,9 +378,9 @@ a {
 	mask-size: cover;
 	-webkit-mask-size: cover;
 	background: #0a1e5e;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
 }
 
 .footer-section .icon-area {
