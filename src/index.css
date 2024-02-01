@@ -114,6 +114,7 @@ ul {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
+    padding-top: 30px;
 }
 
 .show-card {
@@ -186,6 +187,18 @@ ul {
     color: #fff;
     padding: 10px;
     width: 100%;
+}
+.title-section{
+    padding-bottom: 30px;
+    border-bottom: 1px dashed #11326f;
+}
+.title-section h2{
+    font-size: 50px;
+    line-height: 60px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+    font-weight: 700;
+    color: #fff;
 }
 
 

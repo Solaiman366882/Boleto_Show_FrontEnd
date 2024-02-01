@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import ShowCard from "../ShowCard/ShowCard";
-import {  Container } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 
 const ShowSection = () => {
 	const [shows, setShows] = useState([]);
@@ -17,6 +17,17 @@ const ShowSection = () => {
 	return (
 		<div className="section-padding">
 			<Container>
+				<div className="d-flex justify-content-between align-items-center title-section">
+					<div className="">
+						<h2>Shows</h2>
+						<p>Be sure not to miss these Shows today.</p>
+					</div>
+					<div className="d-flex gap-3">
+						<button className="c-btn">Shows</button>
+						<button className="c-btn">Coming Soon</button>
+						<button className="c-btn">Exclusive</button>
+					</div>
+				</div>
 				<div className="show-area">
 					{shows.map((show) => (
 						<ShowCard key={show.show.id} show={show}></ShowCard>
