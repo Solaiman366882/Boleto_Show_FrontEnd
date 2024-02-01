@@ -1,10 +1,10 @@
 const CopyRight = () => {
 	return (
-		<div className="d-flex justify-content-between copy-right">
+		<div className="d-flex justify-content-lg-between justify-content-center text-center text-lg-start flex-column-reverse flex-lg-row gap-3 gap-lg-0 copy-right">
 			<p>
 				Copyright © 2020.All Rights Reserved By <span>Boleto</span>{" "}
 			</p>
-			<ul className="d-flex gap-4 ">
+			<ul className="d-flex gap-4 justify-content-center">
 				<li>
 					<a href="#top">About</a>
 				</li>

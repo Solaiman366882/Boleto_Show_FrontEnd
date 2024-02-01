@@ -17,12 +17,12 @@ const ShowSection = () => {
 	return (
 		<div className="section-padding">
 			<Container>
-				<div className="d-flex justify-content-between align-items-center title-section">
+				<div className="d-flex justify-content-between text-center text-lg-start align-items-center title-section flex-column flex-lg-row">
 					<div className="">
 						<h2>Shows</h2>
 						<p>Be sure not to miss these Shows today.</p>
 					</div>
-					<div className="d-flex gap-3">
+					<div className="d-flex flex-column flex-md-row gap-3">
 						<button className="c-btn">Shows</button>
 						<button className="c-btn">Coming Soon</button>
 						<button className="c-btn">Exclusive</button>

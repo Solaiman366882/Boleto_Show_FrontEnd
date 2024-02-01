@@ -17,7 +17,7 @@ const Header = () => {
 					<div className="logo-area">
 						<img src={logo} alt="" />
 					</div>
-					<div className="menu-btn">
+					<div className="menu-btn lg-menu">
 						<ul>
 							<li>
 								<NavLink
