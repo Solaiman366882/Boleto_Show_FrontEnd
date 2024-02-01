@@ -315,7 +315,7 @@ a {
 }
 .details-banner .details-hero {
 	position: absolute;
-	bottom: 20px;
+	bottom: 40px;
 	z-index: 2;
 	padding: 20px;
 	width: 100%;
@@ -337,7 +337,7 @@ a {
 	transition: all ease 0.3s;
 	cursor: pointer;
 }
-.details-banner .details-hero ul.d-icons li .details-icon:hover{
+.details-banner .details-hero ul.d-icons li .details-icon:hover {
 	color: #31d7a9;
 }
 .details-banner .details-hero ul.d-genre li:hover {
@@ -353,6 +353,27 @@ a {
 	object-position: center top;
 }
 
+/* =================== Details Banner Section Css End ==================== */
+
+/* =================== Details Banner Section Css End ==================== */
+.ticket-section {
+	border-top: 1px solid #17305f;
+	border-bottom: 1px solid #17305f;
+	margin-bottom: 50px;
+	padding: 80px 0;
+	background: #032055;
+}
+.ticket-section h2 {
+    display: inline-block;
+    padding: 15px 10px;
+    color: #fff;
+    border-top: 5px solid #31d7a9;
+    border-bottom: 5px solid #31d7a9;
+    margin-bottom: 25px;
+}
+ .modal-content {
+    background: #032055 !important;
+}
 /* =================== Details Banner Section Css End ==================== */
 
 /* =================== Footer Section Css Start ==================== */
